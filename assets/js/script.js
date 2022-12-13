@@ -121,13 +121,11 @@ icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
         icon.src ="./assets/image/night.png";
-        icon.document.querySelector(".darking").style = "block";
-        icon.document.querySelector(".light-logo").style = "none";
+    
     }
     else{
         icon.src = "./assets/image/sunny.png";
-        icon.document.querySelector(".darking").style = "none";
-        icon.document.querySelector(".light-logo").style = " block";
+        
     }
 };
 
