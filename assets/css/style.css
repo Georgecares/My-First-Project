@@ -8,11 +8,15 @@
 :root{
     --primary-color:#fff;
     --secondary-color:#000;
+    --header-border-color:#CCCCCC;
+    --navbar-background:#fff;
 }
 
 .dark-theme{
-    --primary-color:#fff;
-    --secondary-color:#000;
+    --primary-color:#000;
+    --secondary-color:#fff;
+    --header-border-color:#000;
+    --navbar-background:#191919;
 }
 
 body{
@@ -22,9 +26,30 @@ body{
     
 }
 
+/* .display{
+    display: block;
+}
+
+.remove-img{
+    display: none;
+} */
+
+.dark-logo{
+    display: none;
+}
+
+.light-img{
+    display: block;
+}
+
 /* PRE-LOADER SECTION */
 
-.loader{
+/* .main{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+ .loader{
     position: fixed;
     top: 0;
     left: 0;
@@ -32,21 +57,31 @@ body{
     height: 100%;
     background: #fff;
     z-index: 20000;
-    overflow-x: hidden !important;
+    overflow: hidden !important;
+   
 }
 
 .loader div:nth-child(1) {
     background: rgba(1, 148, 70, 0.9);
+    position: absolute;
+    left: 44%;
+    top: 45%;
 }
 
 .loader div:nth-child(2){
     background: rgba(1, 148, 70, 0.7);
     animation-delay: 0.2s;
+    position: absolute;
+    left: 47%;
+    top: 45%;
 }
 
 .loader div:nth-child(3) {
     background: rgba(1, 148, 70, 0.5);
     animation-delay: 0.4s;
+    position: absolute;
+    left: 50%;
+    top: 45%;
 }
 
 .loader div:last-child{
@@ -81,7 +116,7 @@ body{
         transform: translateY(80px) scale(1, 1);
         animation-timing-function: ease-out;
     }
-}
+}  */
 
 .join-all{
     padding: 7px;
@@ -116,6 +151,7 @@ section{
     color: #338f7a;
 }
 
+
 .phone, .envelope, .marker{
     margin-left: 8px;
     border-left: 1px solid #CCCCCC;
@@ -123,8 +159,8 @@ section{
 }
 
 .border-down{
-  border-bottom: 1px solid #CCCCCC;
-
+  border-bottom: 1px solid var(--header-border-color);
+ background-color: var(--primary-color);
 }
 
 .phone:first-child{
@@ -477,9 +513,14 @@ section{
     font-size: inherit;
 }
 
+.search-1:focus{
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
 .content-1{
    padding: 0px 50px;
-   background-color: var(--primary-color);
+   background-color: var(--navbar-background);
    box-shadow:  0 15px 15px rgb(0 0 0 / 5%);
 }
 
@@ -1027,6 +1068,25 @@ a{
     display: none;
 }
 
+.cause-carousel .owl-dot.active span{
+    background-color: #338F7A !important;
+    width: 18px !important;
+    height: 18px !important;
+    top: 1px;
+    
+ }
+
+ .cause-carousel .owl-dot span{
+    width: 15px !important;
+    height: 15px !important;
+ }
+
+.cause-carousel .owl-dots{
+    position: relative;
+    top: 24px;
+    margin-bottom: 105px;
+}
+
 .project-wrap{
     padding-top: 100px;
 }
@@ -1144,9 +1204,27 @@ a{
 
 /* DARK-MODE */
 #icon{
-    width: 30px;
+    width: 20px;
     cursor: pointer;
     transition: 0.7s;
+    background-color: transparent;
+}
+
+.sun-image{
+    background-color:var(--primary-color);
+    border-radius: 50px;
+    padding: 8px 10px;
+    transition: 0.4s;
+    -webkit-box-shadow: 0 0px 15px #2020203d;
+    box-shadow: 0 0px 15px #2020203d;
+    display: inline-block;
+    position: relative;
+    top: 197px;
+    left: 95%;
+    position: fixed;
+    z-index: 222;
+
+    
 }
 
 /* DONATION MATTERS SECTION */
@@ -2951,6 +3029,10 @@ section{
         border: none;
     }
 
+    .search-1{
+        background-color: transparent;
+    }
+
     .an{
         background-color:#EDF5F3 ;
         position: relative;
@@ -3037,8 +3119,11 @@ section{
         height: 38px;
         position: relative;
         right: -45px;
+    }
 
-
+    .navbar-light .navbar-toggler:focus{
+        border-color: transparent;
+        box-shadow: none;
     }
 
     .navbar-toggler-icon{
@@ -3798,6 +3883,16 @@ label{
 .contact-item .social-profile{
     position: relative;
     left: -43px;
+}
+
+.sun-image{
+    left: 88%;
+    padding: 5px 7px;
+    top: 264px;
+}
+
+.header-wrap{
+
 }
 }
 

@@ -1,3 +1,6 @@
+
+
+
 window.onscroll = function() {navBar()};
 
 var navbar = document.getElementById("navbar");
@@ -10,6 +13,7 @@ function navBar() {
     navbar.classList.remove("sticky")
   }
 };
+
 
 
 const Found = document.querySelector("#countering");
@@ -111,16 +115,21 @@ $('.volunteer-carousel').owlCarousel({
 });
 
 var icon = document.getElementById("icon");
+var darkimg = document.getElementsByClassName('light-logo')
+var lightimg = document.getElementsByClassName('dark-logo')
 icon.onclick = function(){
     document.body.classList.toggle("dark-theme");
     if(document.body.classList.contains("dark-theme")){
-        icon.src = "./assets/image/sun-dm.jpeg";
+        icon.src ="./assets/image/night.png";
+        icon.document.querySelector(".darking").style = "block";
+        icon.document.querySelector(".light-logo").style = "none";
     }
     else{
-        icon.src ="./assets/image/moon-dm.png";
+        icon.src = "./assets/image/sunny.png";
+        icon.document.querySelector(".darking").style = "none";
+        icon.document.querySelector(".light-logo").style = " block";
     }
 };
 
-$(window).on('load', function (event) {
-    $('.js-preloader').delay(500).fadeOut(500);
-});
+
+
