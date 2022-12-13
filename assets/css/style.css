@@ -3584,9 +3584,9 @@ section{
    }
 
    .volunteer-carousel .owl-nav button {
-    position: absolute;
-    bottom: -73px;
-    left: 132px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
    
 }
 
@@ -3595,8 +3595,8 @@ section{
 }
 
     .volunteer-carousel .owl-nav .owl-next{
-    right: 112px;
-    top: 422px;
+    right:0px;
+    top: 1px;
     margin-bottom: 50px;
 
 } 
