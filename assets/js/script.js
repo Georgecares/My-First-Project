@@ -1,6 +1,6 @@
 
 
-
+// STICKY NAV
 window.onscroll = function() {navBar()};
 
 var navbar = document.getElementById("navbar");
@@ -15,7 +15,7 @@ function navBar() {
 };
 
 
-
+// COUNTER CODE
 const Found = document.querySelector("#countering");
 const Founder = new Odometer({
      el: Found,
@@ -44,6 +44,7 @@ const count_44 = new Odometer({
 count_44.update(707);
 
 
+
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -62,7 +63,8 @@ $('.owl-carousel').owlCarousel({
     }
 });
 
-$('.cause-carousel').owlCarousel({
+
+  $('.cause-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
@@ -78,6 +80,11 @@ $('.cause-carousel').owlCarousel({
         }
     }
 });
+
+
+// $('.owl-dots').on('click', 'li', function(e) {
+//     owl.trigger('to.cause.carousel', [$(this).index(), 300]);
+// });
 
 $('.article-carousel').owlCarousel({
     loop:true,
@@ -95,7 +102,8 @@ $('.article-carousel').owlCarousel({
             items:3
         }
     }
-})
+});
+
 $('.volunteer-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -113,6 +121,8 @@ $('.volunteer-carousel').owlCarousel({
         }
     }
 });
+
+// DARK THEME
 
 var icon = document.getElementById("icon");
 var darkimg = document.getElementsByClassName('light-logo')
