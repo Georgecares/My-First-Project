@@ -3939,6 +3939,10 @@ section{
     font-size: 14px;
 }
 
+.footer-wrap .footer-widget .newsletter-form input{
+    width: 71%;
+}
+
 .footer-wrap .footer-top .footer-shape-three{
     top: 63px;
     max-width: 70px;
