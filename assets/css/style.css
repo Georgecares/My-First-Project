@@ -645,7 +645,7 @@ section{
 } */
 
 .donate:hover{
-    color: var(--primary-color);
+    color: var(--join-all);
     background-color: #000000;
     transition: all 0.7s ease-in-out;
 }

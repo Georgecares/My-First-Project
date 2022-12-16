@@ -14,14 +14,14 @@
 // init();
 
 
-(function ($) {
-    "use strict";
+// (function ($) {
+//     "use strict";
 
-    // Buy Now Btn
-    // $('body').append("<a href='#' class='buy-now-btn' target='_blank'><img src='assets/img/envato.png' alt='envato'/>Buy Now</a>"); 
+//     // Buy Now Btn
+//     // $('body').append("<a href='#' class='buy-now-btn' target='_blank'><img src='assets/img/envato.png' alt='envato'/>Buy Now</a>"); 
     
-    //Preloader
-    $(window).on('load', function (event) {
-        $('.loader').delay(500).fadeOut(500);
-    });
-})
+//     //Preloader
+//     $(window).on('load', function (event) {
+//         $('.loader').delay(500).fadeOut(500);
+//     });
+// })
